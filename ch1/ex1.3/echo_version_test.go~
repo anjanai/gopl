@@ -1,0 +1,28 @@
+package echo
+
+import (
+	"testing"
+)
+
+TestEcho (t *testing.T) {
+	var tests = []struct {
+		args []string
+		want string
+	}{
+		{[]string{a b c}, "a b c"},
+	}
+	out = new(bytes.Buffer)
+	for _, test := range tests {
+		if err := echo1(test.args); err != nil {
+			t.Errorf("echo1 failed: %v", err)
+			continue
+		}
+		got := out(*bytes.Buffer).String()
+		if got != test.want {
+			t.Errorf("echo1 = %q, want %q", got, test.want)
+		}
+	}
+}
+
+
+	
